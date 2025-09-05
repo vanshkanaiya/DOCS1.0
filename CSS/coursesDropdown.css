@@ -1,0 +1,19 @@
+.dropdown {
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.group:hover .dropdown {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.group:hover .arrow {
+  transform: rotate(180deg);
+}

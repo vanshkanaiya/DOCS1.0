@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Department of Computer Science</title>
+        <link rel="icon" href="assets/img/kskvlogo.jpg" />
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body class="bg-white">
+        <marquee behavior="" direction="left" class="sticky-top-0 font-bold">
+            Welcome To Department Of Computer Science
+        </marquee>
+
+        <!-- Static Navbar -->
+        <nav class="bg-blue-500 relative p-5 md:px-20">
+            <div
+                class="grid grid-cols-2 lg:grid-cols-[auto_1fr_auto] items-center"
+            >
+                <img
+                    width="270"
+                    src="assets/img/docslogo.jpg"
+                    alt="DOCS logo"
+                    class="border-2"
+                />
+                <div
+                    class="row-start-2 col-span-2 lg:row-start-auto lg:col-span-1 text-white text-4xl font-semibold text-center hidden sm:block font-serif p-4"
+                >
+                    <p>
+                        A r y a b h a t t a &nbsp;&nbsp;&nbsp; B h a v a n
+                        <br />
+                        Department &nbsp; of &nbsp; Computer &nbsp; Science
+                    </p>
+                    <p class="text-xl font-bold text-gray-200 pt-3 font-serif">
+                        Krantiguru Shyamji Krishna Varma Kachchh University
+                    </p>
+                </div>
+
+                <img
+                    width="120"
+                    class="hidden sm:block justify-self-center border-2 border-white rounded-full"
+                    src="assets/img/kskv logo rounded.png"
+                    alt="KSKV logo"
+                />
+                <svg
+                    id="toggler"
+                    class="sm:hidden justify-self-end"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                >
+                    <path d="M3 12h18" />
+                    <path d="M3 18h18" />
+                    <path d="M3 6h18" />
+                </svg>
+            </div>
+
+            <ul
+                id="mobilemenu"
+                class="absolute z-50 top-full left-0 w-full items-stretch bg-white p-2 rounded-lg shadow font-semibold transition-all flex flex-wrap flex-col sm:mt-5 sm:justify-center sm:flex-row sm:static pointer-events-none opacity-0 invisible sm:pointer-events-auto sm:opacity-100 sm:visible"
+            >
+                <li class="p-2 ml-4">
+                    <button
+                        id="menuButton"
+                        data-position="bottom"
+                        onclick="loadPage('PAGES/home.html', this)"
+                    >
+                        Home
+                    </button>
+                </li>
+                <li class="p-2 ml-4">
+                    <button
+                        id="menuButton"
+                        data-position="bottom"
+                        onclick="loadPage('PAGES/gallery.html', this)"
+                    >
+                        Gallery
+                    </button>
+                </li>
+                <li class="p-2 ml-4">
+                    <button
+                        id="menuButton"
+                        data-position="bottom"
+                        onclick="loadPage('PAGES/Courses.html', this)"
+                    >
+                        Courses
+                    </button>
+                </li>
+                <li class="p-2 ml-4">
+                    <button
+                        id="menuButton"
+                        data-position="bottom"
+                        onclick="loadPage('PAGES/syllabus.html', this)"
+                    >
+                        Syllabus
+                    </button>
+                </li>
+                <li class="p-2 ml-4">
+                    <button
+                        id="menuButton"
+                        data-position="bottom"
+                        onclick="loadPage('PAGES/people.html', this)"
+                    >
+                        People
+                    </button>
+                </li>
+                <li class="p-2 ml-4">
+                    <button
+                        id="menuButton"
+                        data-position="bottom"
+                        onclick="loadPage('PAGES/books.html', this)"
+                    >
+                        Books
+                    </button>
+                </li>
+                <li class="p-2 ml-4">
+                    <button
+                        id="menuButton"
+                        data-position="bottom"
+                        onclick="loadPage('PAGES/resources.html', this)"
+                    >
+                        Resources
+                    </button>
+                </li>
+                <li class="p-2 ml-4">
+                    <button
+                        id="menuButton"
+                        data-position="bottom"
+                        onclick="loadPage('PAGES/chatbot.html', this)"
+                    >
+                        Chatbot
+                    </button>
+                </li>
+                <li class="p-2 ml-4">
+                    <button
+                        id="menuButton"
+                        data-position="bottom"
+                        onclick="loadPage('PAGES/facilities.html', this)"
+                    >
+                        Facilities
+                    </button>
+                </li>
+                <li class="p-2 ml-4">
+                    <button
+                        id="menuButton"
+                        data-position="bottom"
+                        onclick="loadPage('PAGES/contact.html', this)"
+                    >
+                        Contact
+                    </button>
+                </li>
+                <li class="p-2 ml-4">
+                    <button
+                        id="menuButton"
+                        data-position="bottom"
+                        onclick="loadPage('PAGES/login.html', this)"
+                    >
+                        Log-in
+                    </button>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Dynamic Content Container -->
+        <div
+            id="content"
+            class="transition-all duration-500 opacity-100 mt-6 transform"
+        ></div>
+
+        <footer class="bg-blue-500 text-white py-10 mt-10">
+            <div
+                class="max-w-[1550px] mx-auto px-6 grid grid-cols-1 md:grid-cols-5 gap-8"
+            >
+                <div>
+                    <img
+                        src="assets/img/docslogo.jpg"
+                        alt="CS Dept Logo"
+                        class="mb-4 border-2 rounded-lg"
+                    />
+                    <p class="font-bold text-xl">
+                        A r y a b h a t t a &nbsp;&nbsp; B h a v a n
+                    </p>
+                    <p>
+                        Department of Computer Science<br />
+                        KSKV Kachchh University
+                    </p>
+                </div>
+
+                <div class="sm:ml-10">
+                    <h3 class="text-xl font-bold mb-3">Quick Links</h3>
+                    <ul class="space-y-2 text-md">
+                        <li>
+                            <a
+                                href="#"
+                                class="hover:text-gray-600 hover:font-semibold"
+                                >About Us</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="hover:text-gray-600 hover:font-semibold"
+                                >Courses</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="hover:text-gray-600 hover:font-semibold"
+                                >Faculty</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="hover:text-gray-600 hover:font-semibold"
+                                >Research</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="hover:text-gray-600 hover:font-semibold"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-3">Quick Links</h3>
+                    <ul class="space-y-2 text-md">
+                        <li>
+                            <a
+                                href="https://drive.google.com/drive/folders/1SOIELP3GAghYiVkB1bd4wiRhAuJ38Dxz"
+                                target="_blank"
+                                class="hover:text-gray-600 hover:font-semibold"
+                                >Old Question Paper</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="hover:text-gray-600 hover:font-semibold"
+                                >Student Log-in</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="hover:text-gray-600 hover:font-semibold"
+                                >Addmission Form</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="hover:text-gray-600 hover:font-semibold"
+                                >Magzine</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="hover:text-gray-600 hover:font-semibold"
+                                >NAAC</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-3">Contact</h3>
+                    <p class="">
+                        KSKV Kachchh University,<br />
+                        Bhuj - 370001, Gujarat
+                    </p>
+                    <p class="mt-2">
+                        Email:
+                        <a
+                            href="mailto:csdept@kskv.edu"
+                            class="hover:text-gray-600 underline hover:font-semibold"
+                            >csdept@kskv.edu</a
+                        >
+                    </p>
+                    <p class="">
+                        Phone:
+                        <a
+                            href="tel:+912836123456"
+                            class="hover:text-gray-600 underline hover:font-semibold"
+                            >+91 2836 123456</a
+                        >
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-3">Follow Us</h3>
+                    <div class="flex space-x-4 mt-2">
+                        <a href="#" class="hover:text-gray-300"
+                            ><img
+                                src="assets/img/instagram.png"
+                                alt="instagram"
+                        /></a>
+                        <a href="#" class="hover:text-gray-300"
+                            ><img
+                                src="assets/img/youtube (1).png"
+                                alt="youtube"
+                        /></a>
+                        <a href="#" class="hover:text-gray-300"
+                            ><img src="assets/img/gmail (1).png" alt="mail"
+                        /></a>
+                        <a href="#" class="hover:text-gray-300"
+                            ><img src="assets/img/mobile.png" alt="phone"
+                        /></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom -->
+            <div
+                class="text-center text-sm text-gray-800 mt-8 border-t border-gray-700 pt-4"
+            >
+                &copy; 2025 Department of Computer Science, KSKV Kachchh
+                University. All rights reserved.
+            </div>
+        </footer>
+
+        <!-- Scripts  -->
+        <script src="SCRIPT/dynamic.js" defer></script>
+        <script src="SCRIPT/slideHome.js" defer></script>
+        <script src="SCRIPT/nav.js" defer></script>
+        <script src="SCRIPT/gallery.js" defer></script>
+        <script src="SCRIPT/notavalible.js" defer></script>
+        <link rel="stylesheet" href="CSS/gallery.css" />
+    </body>
+</html>

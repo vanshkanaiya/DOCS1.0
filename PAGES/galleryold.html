@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="icon" href="../assets/img/kskvlogo.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white">
+
+    <div id="loader" class="fixed inset-0 bg-white flex items-center justify-center z-50 hidden">
+        <img src="../assets/img/kskv logo rounded.png" class="w-[150px] animate-spin" alt="Loading...">
+    </div>
+
+    <marquee behavior="" direction="left" class="sticky-top-0 font-bold">Welcome To Department Of Computer Science
+    </marquee>
+
+    <nav class="bg-blue-500 relative p-5 md:px-20">
+
+        <div class="grid grid-cols-2 lg:grid-cols-[auto_1fr_auto] items-center">
+            <img width="270" src="../assets/img/docslogo.jpg" alt="DOCS logo">
+            <p
+                class="row-start-2 col-span-2 lg:row-start-auto lg:col-span-1 text-white text-4xl font-semibold text-center hidden sm:block font-serif p-4">
+                Krantiguru Shyamji Krishna Varma<br>Kachchh University</p>
+            <img width="120" class="hidden sm:block justify-self-center" src="../assets/img/kskvlogo.jpg"
+                alt="KSKV logo">
+            <svg id="toggler" class="sm:hidden justify-self-end" xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M3 12h18" />
+                <path d="M3 18h18" />
+                <path d="M3 6h18" />
+            </svg>
+        </div>
+        <ul id="mobilemenu"
+            class="absolute z-50 top-full left-0 w-full items-stretch bg-white p-2 rounded-lg shadow font-semibold transition-all flex flex-wrap flex-col sm:mt-5 sm:justify-center sm:flex-row sm:static pointer-events-none opacity-0 invisible sm:pointer-events-auto sm:opacity-100 sm:visible">
+
+            <li class="p-2 ml-4">
+                <a href="../index.html"
+                    class="transition hover:underline hover:text-blue-800 hove:font-bold text-blue-700">Home</a>
+            </li>
+            <li class="p-2 ml-4">
+                <a href="gallery.html"
+                    class="transition underline hover:text-blue-800 font-bold text-blue-700">Gallery</a>
+            </li>
+            <li class="p-2 ml-4">
+                <a href="Courses.html"
+                    class="transition hover:underline hover:text-blue-800 hover:font-bold text-blue-700">Courses</a>
+            </li>
+            <li class="p-2 ml-4">
+                <a href="syllabus.html"
+                    class="transition hover:underline hover:text-blue-800 hover:font-bold text-blue-700">Syllabus</a>
+            </li>
+            <li class="p-2 ml-4">
+                <a href="books.html"
+                    class="transition hover:underline hover:text-blue-800 hover:font-bold text-blue-700">Books</a>
+            </li>
+            <li class="p-2 ml-4">
+                <a href="resources.html"
+                    class="transition hover:underline hover:text-blue-800 hover:font-bold text-blue-700">Resources</a>
+            </li>
+            <li class="p-2 ml-4">
+                <a href="facilities.html"
+                    class="transition underline hover:text-blue-800 font-bold text-blue-700">Facilities</a>
+            </li>
+            <li class="p-2 ml-4">
+                <a href="chatbot.html"
+                    class="transition hover:underline hover:text-blue-800 hover:font-bold text-blue-700">Chatbot</a>
+            </li>
+            <li class="p-2 ml-4">
+                <a href="contact.html"
+                    class="transition hover:underline hover:text-blue-800 hover:font-bold text-blue-700">Contact</a>
+            </li>
+            <li class="p-2 ml-4">
+                <a href="login.html"
+                    class="transition hover:underline hover:text-blue-800 hover:font-bold text-blue-700">Log-in</a>
+            </li>
+            <li class="p-2 ml-4">
+                <a href="test.html"
+                    class="transition hover:underline hover:text-blue-800 hover:font-bold text-blue-700">Test</a>
+            </li>
+        </ul>
+    </nav>
+
+    <br>
+    <h1 class="flex justify-center text-xl">Welcome to the gallery</h1>
+    <br><br>
+
+
+    <div class="max-w-2xl mx-auto bg-white rounded-lg overflow-hidden mb-4">
+        <div class="flex flex-col md:flex-row border-2 mb-4 rounded-lg shadow-md">
+            <div class="md:w-1/3">
+                <img src="../assets/img/contactimg.png" alt="..."
+                    class="w-full h-full object-cover rounded-t-lg md:rounded-l-lg md:rounded-t-none">
+            </div>
+            <div class="md:w-2/3 p-4">
+                <h5 class="text-xl font-bold mb-2">Function Name</h5>
+                <h3 class="font-semibold text-gray-700 mb-2">Date of Function</h3>
+                <p class="text-gray-700 mb-2">
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This
+                    content is a little bit longer.
+                </p>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row border-2 mb-4 rounded-lg shadow-md">
+            <div class="md:w-1/3">
+                <img src="../assets/img/docslogo.jpg" alt="..."
+                    class="w-full h-full object-cover rounded-t-lg md:rounded-l-lg md:rounded-t-none">
+            </div>
+            <div class="md:w-2/3 p-4">
+                <h5 class="text-xl font-bold mb-2">Function Name</h5>
+                <h3 class="font-semibold text-gray-700 mb-2">Date of Function</h3>
+                <p class="text-gray-700 mb-2">
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This
+                    content is a little bit longer.
+                </p>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row border-2 mb-4 rounded-lg shadow-md">
+            <div class="md:w-1/3">
+                <img src="../assets/img/kskvlogo.jpg" alt="..."
+                    class="w-full h-full object-cover rounded-t-lg md:rounded-l-lg md:rounded-t-none">
+            </div>
+            <div class="md:w-2/3 p-4">
+                <h5 class="text-xl font-bold mb-2">Function Name</h5>
+                <h3 class="font-semibold text-gray-700 mb-2">Date of Function</h3>
+                <p class="text-gray-700 mb-2">
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This
+                    content is a little bit longer.
+                </p>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row border-2 mb-4 rounded-lg shadow-md">
+            <div class="md:w-1/3">
+                <img src="../assets/img/docsview.jpg" alt="..."
+                    class="w-full h-full object-cover rounded-t-lg md:rounded-l-lg md:rounded-t-none">
+            </div>
+            <div class="md:w-2/3 p-4">
+                <h5 class="text-xl font-bold mb-2">Function Name</h5>
+                <h3 class="font-semibold text-gray-700 mb-2">Date of Function</h3>
+                <p class="text-gray-700 mb-2">
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This
+                    content is a little bit longer.
+                </p>
+            </div>
+        </div>
+
+        <div id="dynamic-cards"></div>
+    </div>
+
+
+    <footer class="bg-blue-800 text-white text-center p-4 mt-10 text-xl">
+        &copy; 2025 Department of Computer Science. All rights reserved.
+    </footer>
+
+    <script src="../SCRIPT/script.js" defer></script>
+    <script src="../SCRIPT/loader.js" defer></script>
+
+</body>
+
+</html>
